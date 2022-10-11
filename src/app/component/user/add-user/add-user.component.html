@@ -1,0 +1,35 @@
+<div class="content container-fluid">
+  <div class="page-header">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="page-title">Vertical Form</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">Vertical Form</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Basic Form</h4>
+        </div>
+        <div class="card-body">
+          <form #userFrom="ngForm" (ngSubmit)="onUserCreate(userFrom.value)">
+            <div class="form-group">
+              <label>User Name</label>
+              <input type="text" class="form-control" name="uName" ngModel />
+            </div>
+
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

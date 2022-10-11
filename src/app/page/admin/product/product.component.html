@@ -1,0 +1,65 @@
+<div class="content container-fluid">
+  <div class="page-header">
+    <div class="row align-items-center">
+      <div class="col">
+        <h3 class="page-title">Product</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item active">List Product</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 d-flex">
+      <div class="card card-table flex-fill">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-hover table-center mb-0">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Image</th>
+                  <th>Price</th>
+                  <th>Description Sort</th>
+                  <th class="text-end">Action</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let product of products">
+                <tr>
+                  <td>
+                    <h2 class="table-avatar name-width">
+                      <a href="general.html">{{ product.name }} </a>
+                    </h2>
+                  </td>
+                  <td>
+                    <a href="general.html" class="avatar avatar-sm me-2"
+                      ><img
+                        class="avatar-img rounded-circle"
+                        src="{{ product.urlImage }}"
+                        alt="User Image"
+                    /></a>
+                  </td>
+                  <td>{{ product.price }}</td>
+                  <td>{{ product.descSort }}</td>
+                  <td class="text-end">
+                    <div class="actions">
+                      <a href="#" class="btn btn-sm bg-success-light me-2">
+                        <i class="fe fe-pencil"></i>
+                      </a>
+                      <a href="#" class="btn btn-sm bg-danger-light">
+                        <i class="fe fe-trash"></i>
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
