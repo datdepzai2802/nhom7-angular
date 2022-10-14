@@ -1,0 +1,35 @@
+.text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: rgb(56, 56, 61);
+    margin-bottom: 12px;
+    margin-top: 0px;
+}
+.nav li{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.nav li a{
+    margin-bottom: 10px;
+    color: rgb(128, 128, 137);
+    text-decoration: none;
+    font-size: 12px;
+}
+.nav li a:hover{
+    text-decoration: underline;
+}
+.col-md-10 p{
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: rgb(128, 128, 137);
+}
+.icon img{
+    margin-right: 8px;
+}
+.icon span{
+    margin-right: 8px;
+}
+.icon svg{
+    margin-right: 8px;
+}
