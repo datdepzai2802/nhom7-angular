@@ -1,0 +1,292 @@
+@media (min-width: 600px) {
+   
+//laptop pc view
+//----
+//----
+//----
+//----
+//----
+
+.containerHomePage{
+    width: 100%;
+    height: 100px;
+    background-color:rgb(26, 148, 255);
+    
+}
+.logo{
+    width: 70px;
+    height: 50px;
+    
+}
+
+.logotiki{
+    margin-top: 70px;
+    margin-left: -70px;
+}
+.searchHomePage{
+    width: 602px;
+    height: 40px;
+    margin-left: 90px;
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 14px;
+    border: 0px;
+}
+.btnSubmit{
+    height: 42px;
+    width: 128px;
+    background-color: rgb(13, 92, 182);
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+}
+.icon-search{
+    width: 23px;
+    padding-right: 3px;
+    margin-top: -5px;
+}
+
+.text1{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    border-right: 2px solid white;
+    padding-right: 8px;
+}
+.text{
+    text-decoration: none;
+    color: white;
+    padding-left: 8px;
+   
+}
+.text:hover{
+    color: rgb(255, 135, 135);
+}
+.text1:hover{
+    color: rgb(255, 135, 135);
+}
+.profile{
+    width: 40px;
+    padding-right: 5px;
+}
+.reSearch{
+    margin-left: 270px;
+    margin-top: -20px;
+    color: white;
+    font-size: 12px;
+}
+.reSearch0{
+    margin-left: 330px;
+    margin-top: -35px;
+    color: white;
+    font-size: 12px;
+}
+.reSearch1{
+    margin-left: 270px;
+    margin-top: -20px;
+    color: white;
+    font-size: 12px;
+}
+.reSearch2{
+    margin-left: 270px;
+    margin-top: -20px;
+    color: white;
+    font-size: 12px;
+}
+.reSearch3{
+    margin-left: 270px;
+    margin-top: -20px;
+    color: white;
+    font-size: 12px;
+}
+
+.dis{
+    display: inline;
+    font-size: 13px;
+    
+}
+.res{
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+    
+}
+.res:hover{
+    color: rgb(255, 135, 135);
+}
+.reS{
+    margin-top: -20px;
+    margin-left: 220px;
+}
+.shopping{
+    margin-left: 20px;
+    width: 60px;
+}
+.cart{
+    width: 40px;
+    margin-left: 20px;
+}
+.shopping{
+    text-decoration: none;
+    color: white;
+    
+}
+.textShop{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    
+}
+.hidden1{
+    display: none;
+}
+}
+
+//----
+//----
+//----
+//----
+// Mobile View===================================================================================================
+//----
+//----
+//----
+//----
+//----
+
+@media (max-width: 500px) {
+
+    .containerHomePage{
+        width: 100%;
+        height: 90px;
+        background-color:rgb(26, 148, 255);
+        
+    }
+    .logo{
+        width: 70px;
+        height: 50px;
+        
+    }
+    
+    .logotiki{
+        display: none;
+    }
+    .searchHomePage{
+        width: 172px;
+        height: 54px;
+       border: 0px;
+        margin-left: 20px;
+        border-radius: 5px;
+        padding: 13px;
+        font-size: 17px;
+        margin-top: 15px;
+    }
+    .btnSubmit{
+        height: 53px;
+        width: 68px;
+        background-color: rgb(13, 92, 182);
+        color: white;
+        border-radius: 6px;
+        font-size: 12px;
+        border: 0px;
+    }
+    .icon-search{
+        display: none;
+        
+    }
+    .hidden{
+        display: none;
+    }
+    .show{
+        display: inline;
+    }
+    .text1{
+        text-decoration: none;
+        color: white;
+        margin-left: 20px;
+        border-right: 2px solid white;
+        padding-right: 8px;
+    }
+    .text{
+        text-decoration: none;
+        color: white;
+        padding-left: 8px;
+       
+    }
+    .text:hover{
+        color: rgb(255, 135, 135);
+    }
+    .text1:hover{
+        color: rgb(255, 135, 135);
+    }
+    .profile{
+        width: 40px;
+        padding-right: 5px;
+    }
+    .reSearch{
+        margin-left: 270px;
+        margin-top: -20px;
+        color: white;
+        font-size: 12px;
+    }
+    .reSearch0{
+        margin-left: 330px;
+        margin-top: -35px;
+        color: white;
+        font-size: 12px;
+    }
+    .reSearch1{
+        margin-left: 270px;
+        margin-top: -20px;
+        color: white;
+        font-size: 12px;
+    }
+    .reSearch2{
+        margin-left: 270px;
+        margin-top: -20px;
+        color: white;
+        font-size: 12px;
+    }
+    .reSearch3{
+        margin-left: 270px;
+        margin-top: -20px;
+        color: white;
+        font-size: 12px;
+    }
+    
+    .dis{
+        display: inline;
+        font-size: 13px;
+        
+    }
+    .res{
+        display: none;
+        
+    }
+    .res:hover{
+        color: rgb(255, 135, 135);
+    }
+    .reS{
+        margin-top: -20px;
+        margin-left: 220px;
+    }
+    .shopping{
+        margin-left: 20px;
+        width: 60px;
+    }
+    .cart{
+        width: 40px;
+        margin-left: 20px;
+    }
+    .shopping{
+        text-decoration: none;
+        color: white;
+        
+    }
+    .textShop{
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        
+    }
+
+}

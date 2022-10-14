@@ -1,0 +1,412 @@
+@media (min-width: 600px) {
+    
+
+.bg{
+    background-color: #efefef;
+}
+.tieuDe{
+    font-size: 17px;
+    font-weight: 300;
+    padding-right: 10px;
+}
+.tieuDe1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.danhmuc{
+    float: left;
+    width: 210px;
+    height: 100;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+}
+.danhMucCon{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    
+}
+.danhMucCon:hover{
+    color: rgb(26, 148, 255);
+}
+.danhMucCon1{
+    line-height: 40px;
+}
+.listProduct{
+    
+    height: 530px;
+    background-color: white;
+}
+.cot{
+    display: grid;
+    grid-template-columns: 220px 1060px;
+
+}
+h6{
+    font-weight: bold;
+}
+.noiDung{
+    
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+.chuNoiDung {
+color: black;
+text-decoration: none;
+margin-left: 30px;
+
+}
+.chuNoiDung:hover{
+   color: rgb(26, 148, 255);
+   border-bottom: 1px solid rgb(26, 148, 255);
+   border-width: 3px;
+   
+}
+.voucher{
+
+    padding: 5px;
+    background-color: #efefef;;
+    border-radius: 13px;
+   
+}
+.voucher1{
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 70px 70px;
+    gap: 10px;
+}
+.noidungSP{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+   padding-top: 10px;
+
+}
+.sanPham{
+    width: 100px;
+    text-decoration: none;
+    color: black;
+    
+    
+}   
+
+.sanpham{
+    background-color: white;
+    border-radius: 4px;
+}
+
+.tensp{
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 200px;
+    white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+margin: 0px;
+}
+.danhgia{
+    font-size: 14px;
+    font-weight: 300;
+    color: #a4a4a4;
+    margin-top: -90px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+.gia{
+   
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 17px;
+    color: red;
+    margin: 0;
+    font-weight: 700;
+}
+.daBan{
+    font-size: 13px;
+}
+.thuonghieu{
+    margin-top: -435px;
+    position: relative;
+}
+.tangqua{
+    font-size: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+.ship{
+    font-size: 11px;
+    border: 1px solid rgb(41, 165, 248);
+    padding: 1px;
+    color: rgb(41, 165, 248);
+    border-radius: 3px;
+    width: 55px;
+    text-align: center;
+    height: 18px;
+}
+
+.Ship{
+    padding-right: 10px;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    padding-top: 3px;
+    
+}
+.vanchuyen{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.vanChuyen{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.sanpham:hover{
+    box-shadow: 5px 2px 2px 5px #e9e9e9
+    
+}
+
+.sizeH{
+    font-weight: bolder;
+    font-size: 13px;
+    border-top: 2px solid rgb(247, 247, 247);
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.diachi{
+    text-decoration: underline;
+    font-weight: bolder
+}
+.noidungdanhmuc{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    
+}
+.noidungdanhmuc1{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.noidungdanhmuc:hover{
+    color:  rgb(26, 148, 255);
+    
+}
+.banner{
+    width: 100%; height: 336px; object-fit: cover
+}
+}
+
+
+
+//mobile view ===============================================================================================================
+//mobile view ===============================================================================================================
+//mobile view ===============================================================================================================
+//mobile view ===============================================================================================================
+//mobile view ===============================================================================================================
+
+
+@media (max-width: 500px) {
+    .bg{
+        background-color: #efefef;
+    }
+    .tieuDe{
+        font-size: 17px;
+        font-weight: 300;
+        padding-right: 10px;
+    }
+    .tieuDe1{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .danhmuc{
+       display: none;
+    }
+    .danhMucCon{
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+        font-weight: 400;
+        
+    }
+    .danhMucCon:hover{
+        color: rgb(26, 148, 255);
+    }
+    .danhMucCon1{
+        line-height: 40px;
+    }
+    .listProduct{
+        
+        height: 380px;
+        background-color: white;
+    }
+    .banner{
+        width: 100%;
+        height: 246px;
+        object-fit: fill;
+    }
+    .hidden{
+        display: none;
+    }
+    .cot{
+      
+    
+    }
+    h6{
+        font-weight: bold;
+    }
+    .noiDung{
+        
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+    .chuNoiDung {
+    display: none;
+    
+    }
+    
+    .voucher{
+    
+        padding: 5px;
+        background-color: #efefef;;
+        border-radius: 13px;
+       
+    }
+    .voucher1{
+        padding-left: 20px;
+        display: grid;
+        grid-template-columns: 70px 70px;
+        gap: 10px;
+    }
+    .noidungSP{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+       padding-top: 10px;
+    
+    }
+    .sanPham{
+        width: 100px;
+        text-decoration: none;
+        color: black;
+        
+        
+    }   
+    
+    .sanpham{
+        background-color: white;
+        border-radius: 4px;
+    }
+    
+    .tensp{
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        width: 200px;
+        white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px;
+    }
+    .danhgia{
+        font-size: 14px;
+        font-weight: 300;
+        color: #a4a4a4;
+        margin-top: -90px;
+        padding-right: 10px;
+        padding-left: 10px;
+        
+    }
+    .gia{
+       
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 17px;
+        color: red;
+        margin: 0;
+        font-weight: 700;
+    }
+    .daBan{
+        font-size: 13px;
+    }
+    .thuonghieu{
+        margin-top: -435px;
+        position: relative;
+    }
+    .tangqua{
+        font-size: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 3px;
+    }
+    .ship{
+        font-size: 11px;
+        border: 1px solid rgb(41, 165, 248);
+        padding: 1px;
+        color: rgb(41, 165, 248);
+        border-radius: 3px;
+        width: 55px;
+        text-align: center;
+        height: 18px;
+    }
+    
+    .Ship{
+        padding-right: 10px;
+        padding-left: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+        padding-top: 3px;
+        
+    }
+    .vanchuyen{
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .vanChuyen{
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+    }
+    
+    .sanpham:hover{
+        box-shadow: 5px 2px 2px 5px #e9e9e9
+        
+    }
+    
+    .sizeH{
+        font-weight: bolder;
+        font-size: 13px;
+        border-top: 2px solid rgb(247, 247, 247);
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    .diachi{
+        text-decoration: underline;
+        font-weight: bolder
+    }
+    .noidungdanhmuc{
+        text-decoration: none;
+        font-size: 13px;
+        color: black;
+        
+    }
+    .noidungdanhmuc1{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .noidungdanhmuc:hover{
+        color:  rgb(26, 148, 255);
+        
+    }
+}
