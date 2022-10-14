@@ -24,6 +24,7 @@ import { AddProductComponent } from './component/product/add-product/add-product
 import { EditProductComponent } from './component/product/edit-product/edit-product.component';
 import { AddUserComponent } from './component/user/add-user/add-user.component';
 import { EditUserComponent } from './component/user/edit-user/edit-user.component';
+import { DetailProductComponent } from './page/detail-product/detail-product.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { EditUserComponent } from './component/user/edit-user/edit-user.componen
     EditProductComponent,
     AddUserComponent,
     EditUserComponent,
+    DetailProductComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
