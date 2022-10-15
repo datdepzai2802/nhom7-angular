@@ -8,6 +8,7 @@ import { AdminComponent } from './page/admin/admin/admin.component';
 import { DashboardComponent } from './page/admin/dashboard/dashboard.component';
 import { ProductComponent } from './page/admin/product/product.component';
 import { UserComponent } from './page/admin/user/user.component';
+import { DetailProductComponent } from './page/detail-product/detail-product.component';
 import { GeneralComponent } from './page/general/general.component';
 import { HomePageComponent } from './page/home-page/home-page.component';
 import { LoginComponent } from './page/login/login.component';
@@ -16,8 +17,8 @@ import { PageNotFoundComponent } from './page/page-not-found/page-not-found.comp
 const routes: Routes = [
   // AUTH VIEW
   { path: '', component: HomePageComponent },
+  { path: 'product/detail-product/:id', component: DetailProductComponent },
 
-  
   // ADMIN VIEW
   {
     path: 'admin',
@@ -59,4 +60,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

@@ -7,13 +7,14 @@
 .container{
     width: 100%;
     background-color: white;
-    margin: 0;
     padding: 0;
 }
 .products-detail {
     display: grid;
-    grid-template-columns: 3fr 4fr 2fr;
+    grid-template-columns: 3fr 3.7fr 2fr;
     grid-gap: 30px;
+    align-items: center;
+    justify-content: space-between;
 }
 .colum1s {
     width:100%;
@@ -48,6 +49,7 @@
 .colum2 {
     width: 100%;
     padding-top: 30px;
+    margin-left: 20px;
 }
 
 .title p {
@@ -322,7 +324,7 @@ form button {
 @media (min-width:768px){
     .products-detail {
         display: grid;
-        grid-template-columns: 3fr 4fr 2fr;
+        grid-template-columns: 3fr 3.5fr 2fr;
         grid-gap: 10px;
     }
     .colum1s {
@@ -345,7 +347,7 @@ form button {
         font-size: 17px;
         color: rgb(36, 36, 36);
         line-height: 24px;
-        margin: 0;
+        margin: 0 30px;
         padding-top: 3px;
     }
     
@@ -490,7 +492,7 @@ form button {
         height: 30px;
         border-radius: 5px;
         border: 1px solid rgb(217, 220, 219);
-        margin: 0 20px;
+        margin: 0 10px;
     }
     
     form button {
@@ -504,12 +506,13 @@ form button {
     }
     
     .colum2-row-col2 {
-        width: 100%;
+        width: 90%;
         height: 330px;
         border: 1px solid rgb(217, 220, 219);
         border-radius: 5px;
         margin-top: 50px;
         padding: 15px;
+        margin-right: -20px;
     }
     
     .col2-header {
@@ -611,25 +614,15 @@ form button {
     }
     .mota{
         font-weight: 300;
+        margin-left: 50px;
     }
     .product-description {
         padding: 20px;
         margin-bottom: 20px;
     }
     
-    .product-description h2 {
-        color: rgb(51, 51, 51);
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 32px;
-        padding: 8px 0;
-        text-transform: capitalize;
-        display: flex;
-        -webkit-box-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        align-items: center;
-        margin: 0px;
+    .item{
+        margin-left: 70px;
     }
 }
 
