@@ -8,8 +8,6 @@ import { apiPort } from '../config.service';
   providedIn: 'root',
 })
 export class ProductService {
-
-
   API = `http://localhost:${apiPort}/products`;
 
   constructor(private http: HttpClient) {}
@@ -29,9 +27,4 @@ export class ProductService {
   removeProduct(id: number): Observable<IProduct> {
     return this.http.delete<IProduct>(`${this.API}/${id}`);
   }
-
-  getProduct(id: number): Observable<IProduct> {
-    return this.http.get<IProduct>(`${this.API}/${id}`);
-  }
 }
-
