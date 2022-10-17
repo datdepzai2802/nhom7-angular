@@ -26,26 +26,26 @@
                   <th>Name</th>
                   <th>Image</th>
                   <th>Price</th>
-                  <th>Description Sort</th>
+                  <!-- <th>Description Sort</th> -->
                   <th class="text-end">Action</th>
                 </tr>
               </thead>
               <tbody *ngFor="let product of products">
-                <tr>
-                  <td>
+                <tr style="height: 85px;">
+                  <td style="width:600px;">
                     <h2 class="table-avatar name-width">
-                      <a routerLink="general.html">{{ product.name }} </a>
+                      <a routerLink="general.html" style="text-decoration:none;">{{ product.name }} </a>
                     </h2>
                   </td>
-                  <td>
+                  <td style="padding:0;">
                     <a routerLink="general.html" class="avatar avatar-sm me-2"
-                      ><img
+                      ><img style="width:200%;height:200%;margin-top:-20px;"
                         class="avatar-img rounded-circle"
                         src="{{ product.urlImage }}"
                         alt="User Image"
                     /></a>
                   </td>
-                  <td>
+                  <td style="width:300px;">
                     {{
                       product.price.toLocaleString("vi", {
                         style: "currency",
@@ -53,7 +53,7 @@
                       })
                     }}
                   </td>
-                  <td>{{ product.descSort }}</td>
+                  <!-- <td>{{ product.descSort }}</td> -->
                   <td class="text-end">
                     <div class="actions">
                       <a
