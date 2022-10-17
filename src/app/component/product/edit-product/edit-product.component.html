@@ -4,8 +4,9 @@
       <div class="col-sm-12">
         <h3 class="page-title">Vertical Form</h3>
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-          <li class="breadcrumb-item active">Vertical Form</li>
+          <li class="breadcrumb-item"><a href="/admin">Dashboard</a></li>
+          <li class="breadcrumb-item"><a href="/admin/product">Products</a></li>
+          <li class="breadcrumb-item active">Edit Product</li>
         </ul>
       </div>
     </div>
@@ -15,7 +16,7 @@
     <div class="col-md-6">
       <div class="card">
         <div class="card-header">
-          <h4 class="card-title">Basic Form</h4>
+          <h4 class="card-title">Edit Product Form</h4>
         </div>
         <div class="card-body">
           <form (submit)="onProductEdit()" *ngIf="product">
