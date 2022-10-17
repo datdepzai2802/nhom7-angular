@@ -7,9 +7,12 @@
           <li class="breadcrumb-item">
             <a routerLink="index.html">Dashboard</a>
           </li>
-          <li class="breadcrumb-item active">Report User</li>
+          <li class="breadcrumb-item active">User</li>
         </ul>
       </div>
+    </div>
+    <div>
+      <a routerLink="/admin/user/add"><i class="fa-solid fa-plus"></i></a>
     </div>
   </div>
   <div class="row">
@@ -21,201 +24,51 @@
               <thead>
                 <tr>
                   <th>Name</th>
-                  <th>Registered date</th>
-                  <th>Login time</th>
-                  <th>Logout time</th>
-                  <th>Last login</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
+                  <th>Address</th>
                   <th class="text-end">Action</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr *ngFor="let user of users">
                   <td>
                     <h2 class="table-avatar">
-                      <a routerLink="general.html" class="avatar avatar-sm me-2"
+                      <a
+                        routerLink="/admin/user/{{ user.id }}/edit"
+                        class="avatar avatar-sm me-2"
                         ><img
                           class="avatar-img rounded-circle"
-                          src="assets/img/profiles/avatar-03.jpg"
+                          src="{{ user.urlImage }}"
                           alt="User Image"
                       /></a>
                       <a routerLink="general.html"
-                        >John Lee <span>#0001</span></a
+                        >{{ user.name }} <span>#{{ user.id }}</span></a
                       >
                     </h2>
                   </td>
-                  <td>01 Oct 2019</td>
-                  <td>01.00 PM</td>
-                  <td>03.54 PM</td>
-                  <td>11.00 PM</td>
+                  <td>{{ user.phone | mask: "(000) 000-0000" }}</td>
+                  <td>{{ user.email }}</td>
+                  <td>{{ user.address }}</td>
                   <td class="text-end">
                     <div class="actions">
                       <a
-                        routerLink="#"
+                        routerLink="/admin/user/{{ user.id }}/edit"
                         class="btn btn-sm bg-success-light me-2"
                       >
                         <i class="fe fe-pencil"></i>
                       </a>
-                      <a routerLink="#" class="btn btn-sm bg-danger-light">
+                      <button
+                        class="btn btn-sm bg-danger-light"
+                        mwlConfirmationPopover
+                        [popoverTitle]="popoverTitle"
+                        [popoverMessage]="popoverMessage"
+                        placement="left"
+                        (confirm)="removeUser(user.id)"
+                        (cancel)="cancelClicked = true"
+                      >
                         <i class="fe fe-trash"></i>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h2 class="table-avatar">
-                      <a routerLink="general.html" class="avatar avatar-sm me-2"
-                        ><img
-                          class="avatar-img rounded-circle"
-                          src="assets/img/profiles/avatar-04.jpg"
-                          alt="User Image"
-                      /></a>
-                      <a routerLink="general.html">Joe <span>#0002</span></a>
-                    </h2>
-                  </td>
-                  <td>23 Jan 2020</td>
-                  <td>10.00 AM</td>
-                  <td>03.12 PM</td>
-                  <td>10.00 AM</td>
-                  <td class="text-end">
-                    <div class="actions">
-                      <a
-                        routerLink="#"
-                        class="btn btn-sm bg-success-light me-2"
-                      >
-                        <i class="fe fe-pencil"></i>
-                      </a>
-                      <a routerLink="#" class="btn btn-sm bg-danger-light">
-                        <i class="fe fe-trash"></i>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h2 class="table-avatar">
-                      <a routerLink="general.html" class="avatar avatar-sm me-2"
-                        ><img
-                          class="avatar-img rounded-circle"
-                          src="assets/img/profiles/avatar-05.jpg"
-                          alt="User Image"
-                      /></a>
-                      <a routerLink="general.html"
-                        >Mary Wiley <span>#0003</span></a
-                      >
-                    </h2>
-                  </td>
-                  <td>14 Feb 2020</td>
-                  <td>12.03 PM</td>
-                  <td>11.40 PM</td>
-                  <td>10.00 AM</td>
-                  <td class="text-end">
-                    <div class="actions">
-                      <a
-                        routerLink="#"
-                        class="btn btn-sm bg-success-light me-2"
-                      >
-                        <i class="fe fe-pencil"></i>
-                      </a>
-                      <a routerLink="#" class="btn btn-sm bg-danger-light">
-                        <i class="fe fe-trash"></i>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h2 class="table-avatar">
-                      <a routerLink="general.html" class="avatar avatar-sm me-2"
-                        ><img
-                          class="avatar-img rounded-circle"
-                          src="assets/img/profiles/avatar-06.jpg"
-                          alt="User Image"
-                      /></a>
-                      <a routerLink="general.html"
-                        >Amy Bond <span>#0004</span></a
-                      >
-                    </h2>
-                  </td>
-                  <td>18 Apr 2020</td>
-                  <td>09.10 AM</td>
-                  <td>05.30 PM</td>
-                  <td>06.00 PM</td>
-                  <td class="text-end">
-                    <div class="actions">
-                      <a
-                        routerLink="#"
-                        class="btn btn-sm bg-success-light me-2"
-                      >
-                        <i class="fe fe-pencil"></i>
-                      </a>
-                      <a routerLink="#" class="btn btn-sm bg-danger-light">
-                        <i class="fe fe-trash"></i>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h2 class="table-avatar">
-                      <a routerLink="general.html" class="avatar avatar-sm me-2"
-                        ><img
-                          class="avatar-img rounded-circle"
-                          src="assets/img/profiles/avatar-07.jpg"
-                          alt="User Image"
-                      /></a>
-                      <a routerLink="general.html"
-                        >Clara Brady <span>#0005</span></a
-                      >
-                    </h2>
-                  </td>
-                  <td>20 Apr 2020</td>
-                  <td>01.00 PM</td>
-                  <td>09.54 PM</td>
-                  <td>08.00 AM</td>
-                  <td class="text-end">
-                    <div class="actions">
-                      <a
-                        routerLink="#"
-                        class="btn btn-sm bg-success-light me-2"
-                      >
-                        <i class="fe fe-pencil"></i>
-                      </a>
-                      <a routerLink="#" class="btn btn-sm bg-danger-light">
-                        <i class="fe fe-trash"></i>
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <h2 class="table-avatar">
-                      <a routerLink="general.html" class="avatar avatar-sm me-2"
-                        ><img
-                          class="avatar-img rounded-circle"
-                          src="assets/img/profiles/avatar-08.jpg"
-                          alt="User Image"
-                      /></a>
-                      <a routerLink="general.html"
-                        >Robert Martin <span>#0006</span></a
-                      >
-                    </h2>
-                  </td>
-                  <td>08 Jun 2020</td>
-                  <td>10.00 AM</td>
-                  <td>07.00 PM</td>
-                  <td>10.00 AM</td>
-                  <td class="text-end">
-                    <div class="actions">
-                      <a
-                        routerLink="#"
-                        class="btn btn-sm bg-success-light me-2"
-                      >
-                        <i class="fe fe-pencil"></i>
-                      </a>
-                      <a routerLink="#" class="btn btn-sm bg-danger-light">
-                        <i class="fe fe-trash"></i>
-                      </a>
+                      </button>
                     </div>
                   </td>
                 </tr>

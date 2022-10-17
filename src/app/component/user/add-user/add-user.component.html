@@ -4,8 +4,9 @@
       <div class="col-sm-12">
         <h3 class="page-title">Vertical Form</h3>
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-          <li class="breadcrumb-item active">Vertical Form</li>
+          <li class="breadcrumb-item"><a routerLink="/admin">Dashboard</a></li>
+          <li class="breadcrumb-item"><a routerLink="/admin/user">User</a></li>
+          <li class="breadcrumb-item active">Add user</li>
         </ul>
       </div>
     </div>
@@ -15,13 +16,23 @@
     <div class="col-md-6">
       <div class="card">
         <div class="card-header">
-          <h4 class="card-title">Basic Form</h4>
+          <h4 class="card-title">Add User Form</h4>
         </div>
         <div class="card-body">
           <form #userFrom="ngForm" (ngSubmit)="onUserCreate(userFrom.value)">
             <div class="form-group">
+              <label>Email</label>
+              <input type="text" class="form-control" name="email" ngModel />
+            </div>
+
+            <div class="form-group">
               <label>User Name</label>
-              <input type="text" class="form-control" name="uName" ngModel />
+              <input type="text" class="form-control" name="name" ngModel />
+            </div>
+
+            <div class="form-group">
+              <label>Password</label>
+              <input type="text" class="form-control" name="password" ngModel />
             </div>
 
             <div class="text-end">

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ICategories } from 'src/app/interface/categories';
 import { IProduct } from 'src/app/interface/IProducts';
