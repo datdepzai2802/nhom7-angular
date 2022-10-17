@@ -8,7 +8,9 @@ import { apiPort } from '../config.service';
   providedIn: 'root',
 })
 export class ProductService {
+
   API = `http://localhost:${apiPort}/products`;
+
   constructor(private http: HttpClient) {}
 
   getAllProduct(): Observable<IProduct[]> {

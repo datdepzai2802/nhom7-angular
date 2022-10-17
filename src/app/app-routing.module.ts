@@ -16,6 +16,8 @@ import { PageNotFoundComponent } from './page/page-not-found/page-not-found.comp
 const routes: Routes = [
   // AUTH VIEW
   { path: '', component: HomePageComponent },
+
+  
   // ADMIN VIEW
   {
     path: 'admin',

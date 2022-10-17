@@ -1,1 +1,173 @@
-<p>home-page works!</p>
+<app-header></app-header>
+
+<div class="bg">
+  <div class="container">
+    <div class="tieuDe1">
+      <span class="tieuDe">Trang chủ</span>
+      <span class="tieuDe">></span>
+      <span class="tieuDe">Điện thoại</span>
+    </div>
+
+    <div class="cot">
+      <div class="danhmuc">
+        <h6>Danh mục sản phẩm</h6>
+        <div class="danhMucCon1" *ngFor="let danhmuc of category">
+          <a class="danhMucCon" href="">{{ danhmuc.name }}</a> <br />
+        </div>
+
+        <p class="sizeH">ĐỊA CHỈ NHẬN HÀNG</p>
+        <p class="diachi">Q. Hoàn Kiếm, P. Hàng Trống, Hà Nội</p>
+        <p class=""><a class="noidungdanhmuc1" href="/">ĐỔI ĐỊA CHỈ </a></p>
+
+        <p class="sizeH">NƠI BÁN</p>
+        <p class=""><input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Hà Nội </a></p>
+        <p class="">
+          <input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Hồ Chí Minh </a>
+        </p>
+        <p class=""><input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Tây Ninh </a></p>
+        <p class=""><input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Đà Nẵng </a></p>
+        <p class="">
+          <input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Thái Bình </a>
+        </p>
+
+        <p class=""><a class="noidungdanhmuc1" href="/">Xem thêm ▼ </a></p>
+
+        <p class="sizeH">THƯƠNG HIỆU</p>
+        <p class="">
+          <input type="checkbox" /> <a class="noidungdanhmuc" href="/"> CHONMUA 365 </a>
+        </p>
+        <p class=""><input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Deli </a></p>
+        <p class=""><input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Stabilo </a></p>
+        <p class=""><input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Pentel </a></p>
+        <p class="">
+          <input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Thiên Long </a>
+        </p>
+
+        <p class=""><a class="noidungdanhmuc1" href="/">Xem thêm ▼ </a></p>
+        <p class="sizeH">NHÀ CUNG CẤP</p>
+        <p class="">
+          <input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Nhà sách Fahasa </a>
+        </p>
+        <p class="">
+          <input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Tiki Trading </a>
+        </p>
+        <p class="">
+          <input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Minhhabooks </a>
+        </p>
+        <p class="">
+          <input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Times Books </a>
+        </p>
+        <p>
+          <input type="checkbox" /> <a class="noidungdanhmuc" href="/"> Info book </a>
+        </p>
+
+        <p class=""><a class="noidungdanhmuc1" href="/">Xem thêm ▼ </a></p>
+        <p class="sizeH">GIAO HÀNG</p>
+        <p class="">
+          <input type="radio" /> <a class="noidungdanhmuc" href="/"> Hàng Nội Địa </a>
+        </p>
+        <p class="">
+          <input type="radio" /> <a class="noidungdanhmuc" href="/"> Hàng Quốc Tế </a>
+        </p>
+      </div>
+      <div class="bangTin">
+        <div class="listProduct">
+          <h4 style="padding: 13px">Điện thoại</h4>
+          <div>
+            <img
+              src="https://salt.tikicdn.com/ts/banner/8a/04/77/9b68f1bed7587656860b8985d753b538.png"
+            
+              class="banner"
+              
+            />
+          </div>
+          <div class="noiDung">
+            <a class="chuNoiDung" href="">Phổ biến</a>
+            <a class="chuNoiDung" href="">Bán chạy</a>
+            <a class="chuNoiDung" href="">Hàng mới</a>
+            <a class="chuNoiDung" href="">Giá thấp đến cao</a>
+            <a class="chuNoiDung" href="">Giá cao đến thấp</a>
+          </div>
+          <hr class="hidden" />
+          <div class="voucher1">
+            <a class="voucher" href=""
+              ><img
+                src="https://salt.tikicdn.com/ts/upload/b3/21/cf/c6525bcd44b3bb1b793277cc98487799.png"
+                height="20"
+                width="62"
+                style="padding: 4px"
+            /></a>
+            <a class="voucher" href=""
+              ><img
+                src="https://salt.tikicdn.com/ts/upload/e9/14/26/52318ad1543ad9d3ee5b633b3df0750d.png"
+                height="20"
+                width="62"
+                style="padding: 4px"
+            /></a>
+          </div>
+        </div>
+
+        <div class="noidungSP">
+          <div class="sanpham" *ngFor="let item of products">
+            <a class="sanPham" routerLink="">
+              <img
+                class="img"
+                src="{{ item.urlImage }}"
+                alt=""
+                style="width: 100%; height: 210px"
+              />
+              <img
+                src="https://salt.tikicdn.com/ts/upload/5d/4c/f7/0261315e75127c2ff73efd7a1f1ffdf2.png"
+                width="68"
+                height="14"
+                class="thuonghieu"
+                style="top: 0px; left: 0px"
+              />
+
+              <p class="tensp">{{ item.name }}</p>
+              <span class="danhgia"
+                >{{ item.star
+                }}<svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  size="16"
+                  color="#fdd836"
+                  height="14"
+                  width="14"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="color: rgb(253, 216, 54)"
+                >
+                  <path
+                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+                  ></path></svg
+              ></span>
+              <span class="daBan">Đã bán 100</span>
+              <p class="gia">{{ item.price | currency: "VND":"symbol" }}</p>
+              <div class="tangqua">
+                Tặng tới 307 ASA (106k ₫) <br />
+                ≈ 3.8% hoàn tiền
+              </div>
+              <div class="Ship">
+                <span class="ship">Freeship+</span>
+                <span class="ship">Trả góp</span>
+              </div>
+              <hr style="margin: 0px; margin-top: 10px" />
+              <div class="vanChuyen">
+                <span
+                  ><img
+                    width="32"
+                    height="16"
+                    src="https://salt.tikicdn.com/ts/upload/9e/13/50/6d16b5e1d219857bd23572ce049e59e2.png"
+                    alt="icon-astra"
+                /></span>
+                <span class="vanchuyen">Giao ngày mai</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
