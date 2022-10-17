@@ -10,7 +10,8 @@ import { ProductService } from 'src/app/service/product/product-service.service'
 })
 export class HomePageComponent implements OnInit {
   products: IProduct[] = [];
-  category: any = [];
+  filteredProducts: IProduct[] = [];
+  categories: any = [];
   message: string = '';
   constructor(
     private productService: ProductService,
@@ -18,22 +19,59 @@ export class HomePageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.productService.getAllProduct().subscribe(
-      (data) => {
-        this.products = data;
-      },
-      (error) => {
-        this.message = error.message;
-      }
-    );
+    this.getProduct();
 
     this.categoryService.getAllCategory().subscribe(
       (cate) => {
-        this.category = cate;
+        this.categories = cate;
       },
       (error) => {
         this.message = error.message;
       }
     );
+  }
+
+  getProduct() {
+    this.productService.getAllProduct().subscribe(
+      (data) => {
+        this.products = data;
+        this.filteredProducts = this.products;
+        console.log(this.products);
+      },
+      (error) => {
+        this.message = error.message;
+      }
+    );
+  }
+
+  handleClickCategories(id: any) {
+    switch (id) {
+      case this.categories[0].id:
+        this.filteredProducts = this.products.filter((item: any) => {
+          return item.id_categories === id;
+        });
+        break;
+
+      case this.categories[1].id:
+        this.filteredProducts = this.products.filter((item: any) => {
+          return item.id_categories === id;
+        });
+        break;
+
+      case this.categories[2].id:
+        this.filteredProducts = this.products.filter((item: any) => {
+          return item.id_categories === id;
+        });
+        break;
+
+      case this.categories[3].id:
+        this.filteredProducts = this.products.filter((item: any) => {
+          return item.id_categories === id;
+        });
+        break;
+      default:
+        this.filteredProducts = this.products;
+        break;
+    }
   }
 }

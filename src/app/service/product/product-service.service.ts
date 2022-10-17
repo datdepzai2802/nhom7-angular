@@ -10,7 +10,7 @@ import { apiPort } from '../config.service';
 export class ProductService {
   API = `http://localhost:${apiPort}/products`;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getAllProduct(): Observable<IProduct[]> {
     return this.http.get<IProduct[]>(this.API);

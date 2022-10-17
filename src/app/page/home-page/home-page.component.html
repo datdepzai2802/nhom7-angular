@@ -11,8 +11,14 @@
     <div class="cot">
       <div class="danhmuc">
         <h6>Danh mục sản phẩm</h6>
-        <div class="danhMucCon1" *ngFor="let danhmuc of category">
-          <a class="danhMucCon" routerLink="">{{ danhmuc.name }}</a> <br />
+        <div class="danhMucCon1" *ngFor="let danhmuc of categories">
+          <a
+            class="danhMucCon"
+            routerLink="/"
+            (click)="handleClickCategories(danhmuc.id)"
+            >{{ danhmuc.name }}</a
+          >
+          <br />
         </div>
 
         <p class="sizeH">ĐỊA CHỈ NHẬN HÀNG</p>
@@ -143,7 +149,7 @@
         </div>
 
         <div class="noidungSP">
-          <div class="sanpham" *ngFor="let item of products">
+          <div class="sanpham" *ngFor="let item of filteredProducts">
             <a
               class="sanPham"
               routerLink="product/detail-product/{{ item.id }}"
