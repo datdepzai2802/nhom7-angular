@@ -29,21 +29,18 @@ const routes: Routes = [
       {
         path: 'product',
         component: ProductComponent,
-        children: [
-          { path: 'add', component: AddProductComponent },
-          { path: 'id:/edit', component: EditProductComponent },
-        ],
       },
+      { path: 'product/add', component: AddProductComponent },
+      { path: 'product/:id/edit', component: EditProductComponent },
 
       // user
       {
         path: 'user',
         component: UserComponent,
-        children: [
-          { path: 'add', component: AddUserComponent },
-          { path: 'id:/edit', component: EditUserComponent },
-        ],
       },
+      { path: 'user/add', component: AddUserComponent },
+      { path: 'user/:id/edit', component: EditUserComponent },
+
       //
       { path: 'profile', component: GeneralComponent },
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -60,4 +57,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

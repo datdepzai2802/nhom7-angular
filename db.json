@@ -43,18 +43,8 @@
   ],
   "Products": [
     {
-      "id": 1,
-      "name": "Điện thoại Samsung Galaxy A23",
-      "urlImage": "https://salt.tikicdn.com/cache/750x750/ts/product/e8/d6/54/61f69425bb143c7794e3849863e0f48c.jpg.webp",
-      "price": 4390000,
-      "descSort": "Điện thoại Samsung Galaxy A23 mạnh mẽ, mượt mà và camera chất lượng",
-      "descLong": "<p>Samsung Galaxy A23 là thiết kế gây ấn tượng mạnh mẽ với người dùng bởi cấu hình ấn tượng cho hiệu năng mạnh mẽ. Bên cạnh đó là tần số quét lớn và đặc biệt là giá cả vô cùng phải chăng. Chắc chắn với những gì được trang bị đây sẽ là chiếc smartphone mang lại cho người dùng những trải nghiệm ấn tượng khó quên.</p><p>Điện thoại Samsung Galaxy A23 mang trên mình thiết kế vô cùng ấn tượng và độc đáo. Phần khung viền và mặt lưng được hoàn thiện từ nhựa cao cấp mang đến sự nhẹ nhàng và bền bỉ đồng thời giúp tiết kiệm giá thành cho sản phẩm.</p><p>Samsung Galaxy A23 được thiết kế với nhiều phiên bản màu sắc trẻ trung và nổi bật phù hợp với đại đa số người dùng hiện nay. Bạn có thể lựa chọn màu đen, trắng, xanh hoặc tím để phù hợp với sở thích của mình.</p><p>Samsung Galaxy A23 được trang bị màn TFT LCD kích thước lớn tới 6.6 inch. Bên cạnh đó là độ phân giải Full HD+ vô cùng sắc nét cho hình ảnh trở nên chất lượng và siêu ấn tượng.</p><p>Ngoài ra, Galaxy A23 cũng trang bị cho màn hình tốc độ làm tươi 60 Hz. Với trang bị này, người dùng có thể thoải mái trải nghiệm hình ảnh hiển thị siêu mượt và thao tác chạm vuốt vô cùng mượt mà để đắm chìm trong các tựa game hấp dẫn.</p><p>Samsung Galaxy A23 mang đến sức mạnh vượt trội nhờ bộ vi xử lý chất lượng 8 nhân xung nhịp cao hơn lên đến 2.4GHz. RAM dung lượng 8GB và bộ nhớ trong lưu trữ ROM tùy chọn tương ứng 64/128 GB đáp ứng tối đa nhu cầu sử dụng của người dùng.</p><p>Samsung Galaxy A23 được cài đặt sẵn hệ điều hành Android 12, giao diện người dùng One UI 4.1 và dễ dàng nâng cấp. Từ đó mang đến cho người dùng giao diện dễ dàng sử dụng. Kết nối Bluetooth cùng đầy đủ các cổng kết nối mang lại sự tiện lợi nhất.</p><p>Về khả năng chụp ảnh, Samsung sẽ tích hợp cho Galaxy A23 hệ thống 4 camera sau với cảm biến chính có độ phân giải 50MP cùng ống kính góc siêu rộng 5 MP. Camera macro và cảm biến đo độ sâu cùng độ phân giải 2 MP, camera trước của máy lên tới 8 MP.</p>",
-      "star": "5",
-      "id_categories": 1
-    },
-    {
       "id": 2,
-      "name": "Điện thoại Samsung Galaxy A03s",
+      "name": "Điện thoại Samsung Galaxy A03s update",
       "urlImage": "https://salt.tikicdn.com/cache/750x750/ts/product/be/83/73/79ac456ddfc8f355556c5b752e611408.jpg.webp",
       "price": 2820000,
       "descSort": "A03s sỡ hữu thiết kế tương tự như thế hệ trước, trẻ trung và hiện đại.",
@@ -241,6 +231,15 @@
       "descLong": "<p>Model: ZSN PRO X</p><p>Trở kháng: 25 Ohm</p><p>Độ nhạy: 112 dB</p><p>Tần số: 7 - 40000 Hz</p><p>Chiều dài dây: 1m2</p><p>Micro: Có - Chất lượng HD</p><p>KZ ZSN Pro X vẫn giữ nguyên kiểu dáng từ đàn anh ZSN Pro nhưng được nâng cấp lên dây dẫn mạ bạc cho chất lượng âm thanh tốt hơn, được cấu hình lại giúp chất âm mượt mà hơn, thêm màu sắc mới đẹp hơn, cá tính hơn</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>",
       "star": "4.5",
       "id_categories": 4
+    },
+    {
+      "name": "fuckboy",
+      "price": 123123,
+      "descSort": "sdaa2d",
+      "descLong": "adsa",
+      "id_categories": "2",
+      "urlImage": "https://salt.tikicdn.com/cache/750x750/ts/product/65/89/c7/66b73e67009e0af7204efb3c06d94590.jpg.webp",
+      "id": 21
     }
   ],
   "Categories": [
