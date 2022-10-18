@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ConfirmationPopoverModule } from 'angular-confirmation-popover';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
+import { CommonModule } from '@angular/common';
 //**************  PAGE ******************** */
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -29,6 +30,9 @@ import { AddProductComponent } from './component/product/add-product/add-product
 import { EditProductComponent } from './component/product/edit-product/edit-product.component';
 import { AddUserComponent } from './component/user/add-user/add-user.component';
 import { EditUserComponent } from './component/user/edit-user/edit-user.component';
+import { SignupComponent } from './page/signup/signup.component';
+import { LoginComponent } from './page/login/login.component';
+import { AuthGuard } from './service/Guard/AuthGuard';
 
 @NgModule({
   declarations: [
@@ -52,11 +56,15 @@ import { EditUserComponent } from './component/user/edit-user/edit-user.componen
     AddUserComponent,
     EditUserComponent,
     DetailProductComponent,
+    SignupComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     ConfirmationPopoverModule.forRoot({
       confirmButtonType: 'danger', // set defaults here

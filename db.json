@@ -7,7 +7,8 @@
       "urlImage": "https://picsum.photos/536/354",
       "email": "tiendat@gmail.com",
       "password": "dat123",
-      "phone": "0989897890"
+      "phone": "0989897890",
+      "admin": true
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "urlImage": "https://picsum.photos/536/354",
       "email": "dinhphuc@gmail.com",
       "password": "phuc123",
-      "phone": "098989898989"
+      "phone": "098989898989",
+      "admin": false
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "urlImage": "https://picsum.photos/536/354",
       "email": "tuananh@gmail.com",
       "password": "tuananh123",
-      "phone": "098989898989"
+      "phone": "098989898989",
+      "admin": false
     },
     {
       "id": 5,
@@ -34,7 +37,8 @@
       "urlImage": "https://picsum.photos/536/354",
       "email": "quoctuan@gmail.com",
       "password": "quoctuan123",
-      "phone": "098989898989"
+      "phone": "098989898989",
+      "admin": false
     }
   ],
   "Products": [

@@ -13,6 +13,8 @@ import { GeneralComponent } from './page/general/general.component';
 import { HomePageComponent } from './page/home-page/home-page.component';
 import { LoginComponent } from './page/login/login.component';
 import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
+import { SignupComponent } from './page/signup/signup.component';
+import { AuthGuard } from './service/Guard/AuthGuard';
 
 const routes: Routes = [
   // AUTH VIEW
@@ -23,6 +25,7 @@ const routes: Routes = [
   {
     path: 'admin',
     component: AdminComponent,
+    canActivate: [AuthGuard],
     children: [
       { path: 'dashboard', component: DashboardComponent },
       // product
@@ -47,7 +50,8 @@ const routes: Routes = [
     ],
   },
   // login
-  { path: 'login', component: LoginComponent },
+  { path: 'signin', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
 
   // NO LAYOUT VIEW
   { path: '**', component: PageNotFoundComponent },
