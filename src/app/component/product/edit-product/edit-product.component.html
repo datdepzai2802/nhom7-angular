@@ -1,1 +1,80 @@
-<p>edit-product works!</p>
+<div class="content container-fluid">
+  <div class="page-header">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="page-title">Vertical Form</h3>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/admin">Dashboard</a></li>
+          <li class="breadcrumb-item"><a href="/admin/product">Products</a></li>
+          <li class="breadcrumb-item active">Edit Product</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Edit Product Form</h4>
+        </div>
+        <div class="card-body">
+          <form (submit)="onProductEdit()" *ngIf="product">
+            <div class="form-group">
+              <label>Product Name</label>
+              <input
+                type="text"
+                class="form-control"
+                name="product.name"
+                [(ngModel)]="product.name"
+              />
+            </div>
+            <div class="form-group">
+              <label>Product Price</label>
+              <input
+                type="text"
+                class="form-control"
+                name="product.price"
+                [(ngModel)]="product.price"
+              />
+            </div>
+            <div class="form-group">
+              <label>Description Sort</label>
+              <input
+                type="email"
+                class="form-control"
+                name="product.descSort"
+                [(ngModel)]="product.descSort"
+              />
+            </div>
+            <div class="form-group">
+              <label>Description Long</label>
+              <input
+                type="text"
+                class="form-control"
+                name="product.descLong"
+                [(ngModel)]="product.descLong"
+              />
+            </div>
+
+            <div class="form-group">
+              <select name="" id="" (change)="onSelect($event.target)">
+                <option value=""></option>
+                <option
+                  *ngFor="let category of categorys"
+                  [value]="category.id"
+                >
+                  {{ category.name }}
+                </option>
+              </select>
+            </div>
+
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

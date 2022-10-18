@@ -4,8 +4,11 @@
       <div class="col-sm-12">
         <h3 class="page-title">Vertical Form</h3>
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-          <li class="breadcrumb-item active">Vertical Form</li>
+          <li class="breadcrumb-item"><a routerLink="/admin">Dashboard</a></li>
+          <li class="breadcrumb-item">
+            <a routerLink="/admin/product">Products</a>
+          </li>
+          <li class="breadcrumb-item active">Add Product</li>
         </ul>
       </div>
     </div>
@@ -15,7 +18,7 @@
     <div class="col-md-6">
       <div class="card">
         <div class="card-header">
-          <h4 class="card-title">Basic Form</h4>
+          <h4 class="card-title">Add Product Form</h4>
         </div>
         <div class="card-body">
           <form
@@ -24,29 +27,36 @@
           >
             <div class="form-group">
               <label>Product Name</label>
-              <input type="text" class="form-control" name="pName" ngModel />
+              <input type="text" class="form-control" name="name" ngModel />
             </div>
             <div class="form-group">
               <label>Product Price</label>
-              <input type="number" class="form-control" name="pPrice" ngModel />
+              <input type="text" class="form-control" name="price" ngModel />
             </div>
             <div class="form-group">
               <label>Description Sort</label>
               <input
                 type="email"
                 class="form-control"
-                name="pDescSort"
+                name="descSort"
                 ngModel
               />
             </div>
             <div class="form-group">
               <label>Description Long</label>
-              <input
-                type="text"
-                class="form-control"
-                name="pDescLong"
-                ngModel
-              />
+              <input type="text" class="form-control" name="descLong" ngModel />
+            </div>
+
+            <div class="form-group">
+              <select name="" id="" (change)="onSelect($event.target)">
+                <option value="">Chọn danh mục sản phẩm</option>
+                <option
+                  *ngFor="let category of categorys"
+                  [value]="category.id"
+                >
+                  {{ category.name }}
+                </option>
+              </select>
             </div>
 
             <div class="text-end">

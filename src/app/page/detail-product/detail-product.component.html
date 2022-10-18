@@ -1,0 +1,179 @@
+<app-header></app-header>
+<div class="bg">
+    <div *ngIf="product" class="container">
+        <div class="products-detail">
+            <div class="colum1s">
+                <img src="{{product.urlImage}}"
+                    alt="">
+                <div class="icon-share">
+                    <p>Share:</p>
+                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/social-facebook.svg"
+                        alt="">
+                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/social-messenger.svg"
+                        alt="">
+                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/social-pinterest.svg"
+                        alt="">
+                    <img src="https://frontend.tikicdn.com/_desktop-next/static/img/pdp_revamp_v2/social-twitter.svg"
+                        alt="">
+                </div>
+            </div>
+            <div class="colum2">
+                <div class="title">
+                    <h1>{{product.name}}</h1>
+                    <div class="danhgia" style="display:flex;">
+                        <div class="average" style="margin-right:5px;">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                size="14" color="#fdd836" height="14" width="14" xmlns="http://www.w3.org/2000/svg"
+                                style="color: rgb(253, 216, 54);">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                size="14" color="#fdd836" height="14" width="14" xmlns="http://www.w3.org/2000/svg"
+                                style="color: rgb(253, 216, 54);">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                size="14" color="#fdd836" height="14" width="14" xmlns="http://www.w3.org/2000/svg"
+                                style="color: rgb(253, 216, 54);">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                size="14" color="#fdd836" height="14" width="14" xmlns="http://www.w3.org/2000/svg"
+                                style="color: rgb(253, 216, 54);">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                size="14" color="#fdd836" height="14" width="14" xmlns="http://www.w3.org/2000/svg"
+                                style="color: rgb(253, 216, 54);">
+                                <path
+                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span style="margin-left:5px;">Đánh giá</span>
+                    </div>
+                </div>
+                <div class="colum2-row">
+                    <div class="colum2-row-col1">
+                        <div class="price"
+                            style="background: linear-gradient(50deg, rgb(255, 66, 78), rgb(253, 130, 10));">
+                            <span class="price1">{{product.price.toLocaleString('vi', {style : 'currency', currency : 'VND'})}}</span>
+                        </div>
+                        <div class="sale-price">
+                            <span>13 mã giảm giá</span>
+                            <div class="tn-sale-price">
+                                <div class="coupon__tag">
+                                    giảm giá 10K
+                                </div>
+                                <div class="coupon__tag">
+                                    giảm giá 15K
+                                </div>
+                                <div class="coupon__tag">
+                                    giảm giá 20K
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address">
+                            <span>Giao đến: </span>
+                            <span><a href="">Phường Hàng Trống, Quận Hoàn Kiếm, Hà Nội</a></span>
+                        </div>
+                        <div class="titki-fast">
+                            <div class="titki-fast-top">
+                                <img src="https://salt.tikicdn.com/ts/upload/32/47/d7/5798c9bee17003cf7995c37930f0eeac.png"
+                                    alt=""> |
+                                <span>Thứ 2, ngày 13/06</span>
+                            </div>
+                            <p>35.000đ (Freeship 30K đh 149K)</p>
+                        </div>
+                        <div class="form">
+                            <form action="">
+                                <p>Số lượng:</p>
+                                <input type="number" min="0" id="" name=""><br>
+                                <button>Chọn Mua</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colum2-row-col2">
+                <div class="col2-header">
+                    <div class="logo-img">
+                        <a href="#">
+                            <img src="https://vcdn.tikicdn.com/cache/w100/ts/seller/ee/fa/a0/98f3f134f85cff2c6972c31777629aa0.png.webp"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="logo-text">
+                        <a href="${bookdetail.current_seller.link}" style="text-decoration: none;">
+                            <h4>Tiki Trading</h4>
+                        </a>
+                        <img src="https://salt.tikicdn.com/cache/w100/ts/upload/58/00/b8/6c8ecad82adece328530e6f21971c309.png.webp"
+                            alt="">
+                    </div>
+                </div>
+                <div class="like-follow">
+                    <span>Số sao</span>
+                    <span>Theo dõi</span>
+                    <span>Phản hồi</span>
+                </div>
+                <div class="see-shop">
+                    <a href="" style="margin-right:10px;">
+                        <img src="https://salt.tikicdn.com/ts/upload/49/27/ff/d735c33edfdc6cf6aeb6e183bec28869.png"
+                            alt="">
+                        <span>Xem shop</span>
+                    </a>
+                    <a href="">
+                        <img src="https://salt.tikicdn.com/ts/upload/5b/bf/3c/eeda00767e26b5873030e44f951441c4.png"
+                            alt="">
+                        <span>Theo dõi</span>
+                    </a>
+                </div>
+                <div class="icon-row">
+                    <div class="icon-row-col">
+                        <img src="https://salt.tikicdn.com/ts/upload/2c/48/44/720434869e103b03aaaf1a104d91ad25.png"
+                            alt="">
+                        <p>
+                            Hoàn tiền<br>
+                            111%<br>
+                            nếu hàng giả</p>
+                    </div>
+                    <div class="icon-row-col">
+                        <img src="https://salt.tikicdn.com/ts/upload/4b/a1/23/1606089d5423e5cba05e3820ad39708e.png"
+                            alt="">
+                        <p>
+                            Mở hộp<br>
+                            Kiểm tra<br>
+                            nhận hàng</p>
+                    </div>
+                    <div class="icon-row-col">
+                        <img src="https://salt.tikicdn.com/ts/upload/63/75/6a/144ada409519d72e2978ad2c61bc02a7.png"
+                            alt="">
+                        <p>
+                            Đổi trả trong<br>
+                            30 ngày<br>
+                            nếu sp nỗi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rows">
+            <h3 class="mota">Mô tả sản phẩm</h3>
+        </div>
+        <div class="product-description" style="background-color: white;">
+            <div class="item">
+                <p>{{product.descSort}}</p>
+                {{product.descLong}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

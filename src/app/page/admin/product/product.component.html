@@ -4,10 +4,15 @@
       <div class="col">
         <h3 class="page-title">Product</h3>
         <ul class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+          <li class="breadcrumb-item">
+            <a routerLink="index.html">Dashboard</a>
+          </li>
           <li class="breadcrumb-item active">List Product</li>
         </ul>
       </div>
+    </div>
+    <div class="">
+      <a routerLink="/admin/product/add"><i class="fa-regular fa-plus"></i></a>
     </div>
   </div>
   <div class="row">
@@ -21,35 +26,53 @@
                   <th>Name</th>
                   <th>Image</th>
                   <th>Price</th>
-                  <th>Description Sort</th>
+                  <!-- <th>Description Sort</th> -->
                   <th class="text-end">Action</th>
                 </tr>
               </thead>
               <tbody *ngFor="let product of products">
-                <tr>
-                  <td>
+                <tr style="height: 85px;">
+                  <td style="width:600px;">
                     <h2 class="table-avatar name-width">
-                      <a href="general.html">{{ product.name }} </a>
+                      <a routerLink="general.html" style="text-decoration:none;">{{ product.name }} </a>
                     </h2>
                   </td>
-                  <td>
-                    <a href="general.html" class="avatar avatar-sm me-2"
-                      ><img
+                  <td style="padding:0;">
+                    <a routerLink="general.html" class="avatar avatar-sm me-2"
+                      ><img style="width:200%;height:200%;margin-top:-20px;"
                         class="avatar-img rounded-circle"
                         src="{{ product.urlImage }}"
                         alt="User Image"
                     /></a>
                   </td>
-                  <td>{{ product.price }}</td>
-                  <td>{{ product.descSort }}</td>
+                  <td style="width:300px;">
+                    {{
+                      product.price.toLocaleString("vi", {
+                        style: "currency",
+                        currency: "VND"
+                      })
+                    }}
+                  </td>
+                  <!-- <td>{{ product.descSort }}</td> -->
                   <td class="text-end">
                     <div class="actions">
-                      <a href="#" class="btn btn-sm bg-success-light me-2">
+                      <a
+                        routerLink="/admin/product/{{ product.id }}/edit"
+                        class="btn btn-sm bg-success-light me-2"
+                      >
                         <i class="fe fe-pencil"></i>
                       </a>
-                      <a href="#" class="btn btn-sm bg-danger-light">
+                      <button
+                        class="btn btn-sm bg-danger-light"
+                        mwlConfirmationPopover
+                        [popoverTitle]="popoverTitle"
+                        [popoverMessage]="popoverMessage"
+                        placement="left"
+                        (confirm)="removeProduct(product.id)"
+                        (cancel)="cancelClicked = true"
+                      >
                         <i class="fe fe-trash"></i>
-                      </a>
+                      </button>
                     </div>
                   </td>
                 </tr>

@@ -8,46 +8,50 @@ import { AdminComponent } from './page/admin/admin/admin.component';
 import { DashboardComponent } from './page/admin/dashboard/dashboard.component';
 import { ProductComponent } from './page/admin/product/product.component';
 import { UserComponent } from './page/admin/user/user.component';
+import { DetailProductComponent } from './page/detail-product/detail-product.component';
 import { GeneralComponent } from './page/general/general.component';
 import { HomePageComponent } from './page/home-page/home-page.component';
 import { LoginComponent } from './page/login/login.component';
 import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
+import { SignupComponent } from './page/signup/signup.component';
+import { AuthGuard } from './service/Guard/AuthGuard';
 
 const routes: Routes = [
   // AUTH VIEW
   { path: '', component: HomePageComponent },
+  { path: 'product/detail-product/:id', component: DetailProductComponent },
+
   // ADMIN VIEW
   {
     path: 'admin',
     component: AdminComponent,
+    canActivate: [AuthGuard],
     children: [
       { path: 'dashboard', component: DashboardComponent },
       // product
       {
         path: 'product',
         component: ProductComponent,
-        children: [
-          { path: 'add', component: AddProductComponent },
-          { path: 'id:/edit', component: EditProductComponent },
-        ],
       },
+      { path: 'product/add', component: AddProductComponent },
+      { path: 'product/:id/edit', component: EditProductComponent },
 
       // user
       {
         path: 'user',
         component: UserComponent,
-        children: [
-          { path: 'add', component: AddUserComponent },
-          { path: 'id:/edit', component: EditUserComponent },
-        ],
       },
+      { path: 'user/add', component: AddUserComponent },
+      { path: 'user/:id/edit', component: EditUserComponent },
+
       //
       { path: 'profile', component: GeneralComponent },
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
     ],
   },
   // login
-  { path: 'login', component: LoginComponent },
+  { path: 'signin', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
 
   // NO LAYOUT VIEW
   { path: '**', component: PageNotFoundComponent },
