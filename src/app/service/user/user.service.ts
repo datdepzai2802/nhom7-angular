@@ -9,7 +9,7 @@ import { API } from '../config.service';
 })
 export class UserService {
   // API = `http://localhost:${apiPort}/users`;
-  API = `${API}users`;
+  API = `${API}/users`;
 
   constructor(private http: HttpClient) {}
 

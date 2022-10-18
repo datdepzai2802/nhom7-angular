@@ -32,7 +32,6 @@ import { AddUserComponent } from './component/user/add-user/add-user.component';
 import { EditUserComponent } from './component/user/edit-user/edit-user.component';
 import { SignupComponent } from './page/signup/signup.component';
 import { LoginComponent } from './page/login/login.component';
-import { AuthGuard } from './service/Guard/AuthGuard';
 
 @NgModule({
   declarations: [
