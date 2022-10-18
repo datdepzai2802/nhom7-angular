@@ -2,13 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IUser } from 'src/app/interface/IUser';
-import { apiPort } from '../config.service';
+import { API } from '../config.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  API = `http://localhost:${apiPort}/users`;
+  // API = `http://localhost:${apiPort}/users`;
+  API = `${API}/users`;
   constructor(private http: HttpClient) {}
 
   sigup(data: IUser): Observable<IUser> {
