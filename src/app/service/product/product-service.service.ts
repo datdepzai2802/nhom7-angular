@@ -28,4 +28,7 @@ export class ProductService {
   removeProduct(id: number): Observable<IProduct> {
     return this.http.delete<IProduct>(`${this.API}/${id}`);
   }
+  searchByName(data: any): Observable<any> {
+    return this.http.get<any>(`${this.API + '?name_like=' + data}`);
+  }
 }
