@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { IProduct } from 'src/app/interface/IProducts';
 import { CategoryService } from 'src/app/service/categories/category.service';
 import { ProductService } from 'src/app/service/product/product-service.service';
@@ -9,7 +9,10 @@ import { ProductService } from 'src/app/service/product/product-service.service'
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
+ 
   products: IProduct[] = [];
+  
+
   filteredProducts: IProduct[] = [];
   categories: any = [];
   message: string = '';
@@ -29,9 +32,11 @@ export class HomePageComponent implements OnInit {
         this.message = error.message;
       }
     );
+    
   }
 
   getProduct() {
+    
     this.productService.getAllProduct().subscribe(
       (data) => {
         this.products = data;
@@ -43,6 +48,8 @@ export class HomePageComponent implements OnInit {
       }
     );
   }
+ 
+  
 
   handleClickCategories(id: any) {
     switch (id) {
@@ -74,4 +81,5 @@ export class HomePageComponent implements OnInit {
         break;
     }
   }
+
 }
