@@ -1,0 +1,104 @@
+<div class="danhmuc">
+  <h6>Danh mục sản phẩm</h6>
+  <div class="danhMucCon1" *ngFor="let danhmuc of categories">
+    <a
+      class="danhMucCon"
+      routerLink="/"
+      (click)="handleClickCategories(danhmuc.id)"
+      >{{ danhmuc.name }}</a
+    >
+    <br />
+  </div>
+
+  <p class="sizeH">ĐỊA CHỈ NHẬN HÀNG</p>
+  <p class="diachi">Q. Hoàn Kiếm, P. Hàng Trống, Hà Nội</p>
+  <p class="">
+    <a class="noidungdanhmuc1" routerLink="/">ĐỔI ĐỊA CHỈ </a>
+  </p>
+
+  <p class="sizeH">NƠI BÁN</p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Hà Nội </a>
+  </p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Hồ Chí Minh </a>
+  </p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Tây Ninh </a>
+  </p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Đà Nẵng </a>
+  </p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Thái Bình </a>
+  </p>
+
+  <p class="">
+    <a class="noidungdanhmuc1" routerLink="/">Xem thêm ▼ </a>
+  </p>
+
+  <p class="sizeH">THƯƠNG HIỆU</p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> CHONMUA 365 </a>
+  </p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Deli </a>
+  </p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Stabilo </a>
+  </p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Pentel </a>
+  </p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Thiên Long </a>
+  </p>
+
+  <p class="">
+    <a class="noidungdanhmuc1" routerLink="/">Xem thêm ▼ </a>
+  </p>
+  <p class="sizeH">NHÀ CUNG CẤP</p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Nhà sách Fahasa </a>
+  </p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Tiki Trading </a>
+  </p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Minhhabooks </a>
+  </p>
+  <p class="">
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Times Books </a>
+  </p>
+  <p>
+    <input type="checkbox" />
+    <a class="noidungdanhmuc" routerLink="/"> Info book </a>
+  </p>
+
+  <p class="">
+    <a class="noidungdanhmuc1" routerLink="/">Xem thêm ▼ </a>
+  </p>
+  <p class="sizeH">GIAO HÀNG</p>
+  <p class="">
+    <input type="radio" />
+    <a class="noidungdanhmuc" routerLink="/"> Hàng Nội Địa </a>
+  </p>
+  <p class="">
+    <input type="radio" />
+    <a class="noidungdanhmuc" routerLink="/"> Hàng Quốc Tế </a>
+  </p>
+</div>
