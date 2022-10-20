@@ -9,9 +9,9 @@ import { API } from '../config.service';
 })
 export class UserService {
   // API = `http://localhost:${apiPort}/users`;
-  API = `${API}users`;
+  API = `${API}/users`;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   getAllUser(): Observable<IUser[]> {
     return this.http.get<IUser[]>(this.API);
