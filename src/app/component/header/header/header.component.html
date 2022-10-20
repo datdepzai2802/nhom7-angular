@@ -3,158 +3,61 @@
   routerLink="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
 />
 
-<div  *ngIf="!user" class="containerHomePage">
+<div *ngIf="!user" class="containerHomePage">
   <div class="container">
-
     <div class="flex-container">
-        <div class="flexC" >
-    <a routerLink=""
-      ><img
-        class="logo"
-        src="https://salt.tikicdn.com/ts/upload/ae/f5/15/2228f38cf84d1b8451bb49e2c4537081.png"
-        alt="tiki-logo"
-    /></a>
+      <div class="flexC">
+        <a routerLink=""
+          ><img
+            class="logo"
+            src="https://salt.tikicdn.com/ts/upload/ae/f5/15/2228f38cf84d1b8451bb49e2c4537081.png"
+            alt="tiki-logo"
+        /></a>
 
+        <a routerLink=""
+          ><img
+            class="logotiki"
+            src="https://salt.tikicdn.com/ts/brickv2og/70/07/62/9a90de2324bda05df7ff137972de1c70.png"
+            alt="free-ship-badge"
+            height="18"
+            width="129"
+        /></a>
 
-    <a routerLink=""
-      ><img
-        class="logotiki"
-        src="https://salt.tikicdn.com/ts/brickv2og/70/07/62/9a90de2324bda05df7ff137972de1c70.png"
-        alt="free-ship-badge"
-        height="18"
-        width="129"
-    /></a>
+        <input
+          class="searchHomePage"
+          type="text"
+          placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ..."
+        />
 
+        <button class="btnSubmit" type="submit">
+          <img
+            class="icon-search"
+            src="https://salt.tikicdn.com/ts/upload/ed/5e/b8/8538366274240326978318348ea8af7c.png"
+          />Tìm kiếm
+        </button>
 
-    <input
-    #newItem 
-      class="searchHomePage"
-      type="text"
-      placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ..."
-    />
+        <a class="text1 hidden" routerLink="/signin"
+          ><img
+            class="profile"
+            src="https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png"
+          />Đăng nhập</a
+        >
+        <a class="text hidden" routerLink="/signup">Đăng ký</a>
 
+        <a routerLink="/signin" class="show hidden1" href=""
+          ><img
+            class="profile"
+            src="https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png"
+        /></a>
 
-    <button (click)="searchByName(newItem.value)" class="btnSubmit" type="submit">
-      <img
-        class="icon-search"
-        src="https://salt.tikicdn.com/ts/upload/ed/5e/b8/8538366274240326978318348ea8af7c.png"
-      />Tìm kiếm
-    </button>
+        <a routerLink=""
+          ><img
+            class="cart"
+            src="https://salt.tikicdn.com/ts/upload/40/44/6c/b80ad73e5e84aeb71c08e5d8d438eaa1.png"
+        /></a>
 
-
-  
-
-    
-      <a class="text1 hidden" routerLink="/signin"
-        ><img
-          class="profile"
-          src="https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png"
-        />Đăng nhập</a
-      >
-      <a class="text hidden" routerLink="/signup">Đăng ký</a>
-    
-
-    <a  routerLink="/signin" class=" show hidden1" href=""><img
-        class="profile"
-        src="https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png"
-      /></a>
-  
-
-
-    <a routerLink=""
-      ><img
-        class="cart"
-        src="https://salt.tikicdn.com/ts/upload/40/44/6c/b80ad73e5e84aeb71c08e5d8d438eaa1.png"
-    /></a>
-
-
-    <span class="textShop hidden">Giỏ hàng</span>
-</div>
-    <div class="dis">
-      <div class="reS">
-        <a class="res" routerLink="">iphone 6</a>
-        <a class="res" routerLink="">samsung</a>
-        <a class="res" routerLink="">iphone</a>
-        <a class="res" routerLink="">samsung galaxy</a>
-        <a class="res" routerLink="">poco x3 pro</a>
-        <a class="res" routerLink="">iphone 13 pro</a>
-        <a class="res" routerLink="">điện thoại</a>
+        <span class="textShop hidden">Giỏ hàng</span>
       </div>
-    </div>
-</div>
-
-
-  </div>
-</div>
-
-
-<div  *ngIf="user" class="containerHomePage">
-    <div class="container">
-  
-      <div class="flex-container">
-          <div class="flexC">
-      <a routerLink=""
-        ><img
-          class="logo"
-          src="https://salt.tikicdn.com/ts/upload/ae/f5/15/2228f38cf84d1b8451bb49e2c4537081.png"
-          alt="tiki-logo"
-      /></a>
-  
-  
-      <a routerLink=""
-        ><img
-          class="logotiki"
-          src="https://salt.tikicdn.com/ts/brickv2og/70/07/62/9a90de2324bda05df7ff137972de1c70.png"
-          alt="free-ship-badge"
-          height="18"
-          width="129"
-      /></a>
-  
-  
-      <input
-        class="searchHomePage"
-        type="text"
-        placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ..."
-      />
-  
-  
-      <button class="btnSubmit" type="submit">
-        <img
-          class="icon-search"
-          src="https://salt.tikicdn.com/ts/upload/ed/5e/b8/8538366274240326978318348ea8af7c.png"
-        />Tìm kiếm
-      </button>
-  
-  
-    
-  
-      
-      <a class="text1 hidden userLogin"
-      ><img
-        class="profile"
-        src="https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png"
-      />
-      <span>{{ user.name }}</span>
-    </a>
-
-    <button class="btnOut" (click)="outUser()">
-      <i class="fa-solid fa-arrow-right-from-bracket"></i>
-    </button>
-      
-  
-      
-    
-  
-  
-      <a routerLink=""
-        ><img
-          class="cart"
-          src="https://salt.tikicdn.com/ts/upload/40/44/6c/b80ad73e5e84aeb71c08e5d8d438eaa1.png"
-      /></a>
-  
-  
-      <span class="textShop hidden">Giỏ hàng</span>
-    </div>
       <div class="dis">
         <div class="reS">
           <a class="res" routerLink="">iphone 6</a>
@@ -166,12 +69,74 @@
           <a class="res" routerLink="">điện thoại</a>
         </div>
       </div>
-    
-  </div>
-  
-  
     </div>
   </div>
+</div>
 
-  
- 
+<div *ngIf="user" class="containerHomePage">
+  <div class="container">
+    <div class="flex-container">
+      <div class="flexC">
+        <a routerLink=""
+          ><img
+            class="logo"
+            src="https://salt.tikicdn.com/ts/upload/ae/f5/15/2228f38cf84d1b8451bb49e2c4537081.png"
+            alt="tiki-logo"
+        /></a>
+
+        <a routerLink=""
+          ><img
+            class="logotiki"
+            src="https://salt.tikicdn.com/ts/brickv2og/70/07/62/9a90de2324bda05df7ff137972de1c70.png"
+            alt="free-ship-badge"
+            height="18"
+            width="129"
+        /></a>
+
+        <input
+          class="searchHomePage"
+          type="text"
+          placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ..."
+        />
+
+        <button class="btnSubmit" type="submit">
+          <img
+            class="icon-search"
+            src="https://salt.tikicdn.com/ts/upload/ed/5e/b8/8538366274240326978318348ea8af7c.png"
+          />Tìm kiếm
+        </button>
+
+        <a class="text1 hidden userLogin"
+          ><img
+            class="profile"
+            src="https://salt.tikicdn.com/ts/upload/67/de/1e/90e54b0a7a59948dd910ba50954c702e.png"
+          />
+          <span>{{ user.name }}</span>
+        </a>
+
+        <button class="btnOut" (click)="outUser()">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </button>
+
+        <a routerLink=""
+          ><img
+            class="cart"
+            src="https://salt.tikicdn.com/ts/upload/40/44/6c/b80ad73e5e84aeb71c08e5d8d438eaa1.png"
+        /></a>
+
+        <span class="textShop hidden">Giỏ hàng</span>
+      </div>
+      <div class="dis">
+        <div class="reS">
+          <a class="res" routerLink="">iphone 6</a>
+          <a class="res" routerLink="">samsung</a>
+          <a class="res" routerLink="">iphone</a>
+          <a class="res" routerLink="">samsung galaxy</a>
+          <a class="res" routerLink="">poco x3 pro</a>
+          <a class="res" routerLink="">iphone 13 pro</a>
+          <a class="res" routerLink="">điện thoại</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
