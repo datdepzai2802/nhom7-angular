@@ -32,6 +32,8 @@ import { AddUserComponent } from './component/user/add-user/add-user.component';
 import { EditUserComponent } from './component/user/edit-user/edit-user.component';
 import { SignupComponent } from './page/signup/signup.component';
 import { LoginComponent } from './page/login/login.component';
+import { CategoriesComponent } from './component/categories/categories.component';
+import { ContentHomePageComponent } from './component/content-home-page/content-home-page.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +59,8 @@ import { LoginComponent } from './page/login/login.component';
     DetailProductComponent,
     SignupComponent,
     LoginComponent,
+    CategoriesComponent,
+    ContentHomePageComponent,
   ],
   imports: [
     BrowserModule,
