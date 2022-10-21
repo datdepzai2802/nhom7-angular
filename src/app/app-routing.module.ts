@@ -45,13 +45,15 @@ const routes: Routes = [
       { path: 'user/:id/edit', component: EditUserComponent },
 
       //
-      { path: 'profile', component: GeneralComponent },
+      { path: ':id/general', component: GeneralComponent },
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
     ],
   },
   // login
   { path: 'signin', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  //
+  { path: ':id/generaluser', component: GeneralComponent },
 
   // NO LAYOUT VIEW
   { path: '**', component: PageNotFoundComponent },
